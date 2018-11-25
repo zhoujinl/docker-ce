@@ -17,9 +17,11 @@ RUN yum install -y \
    rpmdevtools \
    vim-common
 
-ARG GO_VERSION
+ENV GO_VERSION 1.10.4
 ENV DISTRO centos
 ENV SUITE 7
+ENV http_proxy=http://172.21.4.61:1080
+ENV https_proxy=http://172.21.4.61:1080
 RUN curl -fSL "https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz" | tar xzC /usr/local
 RUN mkdir -p /go
 ENV GOPATH=/go

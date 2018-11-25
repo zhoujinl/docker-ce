@@ -1,6 +1,8 @@
 Name: docker-ce
-Version: %{_version}
-Release: %{_release}%{?dist}
+Version: 18.06
+Release: _privileged
+
+%{?dist}
 Summary: The open-source application container engine
 Group: Tools/Docker
 License: ASL 2.0
