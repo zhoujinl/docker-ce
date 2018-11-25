@@ -92,3 +92,11 @@ been merged, be sure to port the fix to the respective upstream git repo.
 There will be a git tag for each release candidate (RC) and general
 availablilty (GA) release. The tag will only point to commits on release
 branches.
+
+# by zhoujinl
+# 将修改后的cli/engine 打包成rpm
+cd components/packaging/rpm
+make ENGINE_DIR=/gospace/src/github.com/docker/docker CLI_DIR=/gospace/src/github.com/docker/cli centos-7
+
+# 编译成功后,在rpmbuild/RPMS/ 即可看到rpm包
+
