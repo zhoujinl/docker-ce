@@ -95,9 +95,7 @@ branches.
 
 # by zhoujinl
 # 将修改后的cli/engine 打包成rpm
-cd components/packaging/rpm
-
-make ENGINE_DIR=/gospace/src/github.com/docker/docker CLI_DIR=/gospace/src/github.com/docker/cli centos-7
-
+# cd components/packaging/rpm 
+# make ENGINE_DIR=/gospace/src/github.com/docker/docker CLI_DIR=/gospace/src/github.com/docker/cli centos-7
 # 编译成功后,在rpmbuild/RPMS/ 即可看到rpm包
 
